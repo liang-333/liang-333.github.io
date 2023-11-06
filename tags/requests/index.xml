@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>requests on 昭暝</title>
+        <link>https://liang-333.github.io/tags/requests/</link>
+        <description>Recent content in requests on 昭暝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://liang-333.github.io/tags/requests/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>requests请求头</title>
+        <link>https://liang-333.github.io/p/requests%E8%AF%B7%E6%B1%82%E5%A4%B4/</link>
+        <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://liang-333.github.io/p/requests%E8%AF%B7%E6%B1%82%E5%A4%B4/</guid>
+        <description>&lt;img src="https://liang-333.github.io/img/2.jpg" alt="Featured image of post requests请求头" /&gt;&lt;h3 id=&#34;请求方法&#34;&gt;请求方法&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;get：从服务器获取数据，不对服务器资源产生影响，请求参数会作为请求参数URL的一部分发送。&lt;/p&gt;
+&lt;p&gt;post：向服务器发送数据，会对服务器资源产生影响，请求参数在请求体中且对长度没有限制，请求的参数类型在信息头&amp;quot;Content-Type&amp;quot;。&lt;/p&gt;
+&lt;p&gt;请求返回数据(请求response)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;text   response.text&lt;/li&gt;
+&lt;li&gt;二进制 response.content&lt;/li&gt;
+&lt;li&gt;json   respons.json()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;必选项，请求网址，字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;headers&lt;/td&gt;
+&lt;td&gt;请求头，字典&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;params&lt;/td&gt;
+&lt;td&gt;查询参数，字典&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;post请求参数，一般为字典&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;json&lt;/td&gt;
+&lt;td&gt;参数，字典&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cookies&lt;/td&gt;
+&lt;td&gt;字典，用户身份信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;proxies&lt;/td&gt;
+&lt;td&gt;IP代理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;params查看&#34;&gt;params查看&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://liang-333.github.io/img/param.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;post请求参数查看&#34;&gt;post请求参数查看&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://liang-333.github.io/img/post.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

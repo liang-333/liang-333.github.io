@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>re on 昭暝</title>
+        <link>https://liang-333.github.io/tags/re/</link>
+        <description>Recent content in re on 昭暝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://liang-333.github.io/tags/re/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>正则表达式</title>
+        <link>https://liang-333.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+        <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://liang-333.github.io/p/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+        <description>&lt;img src="https://liang-333.github.io/img/6.jpg" alt="Featured image of post 正则表达式" /&gt;&lt;h3 id=&#34;正则表达式&#34;&gt;正则表达式&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 导入库&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;re&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;re函数用法&#34;&gt;re函数用法&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;pattern&lt;/code&gt;是规则，特殊字符需要反斜杠转义、&lt;code&gt;string&lt;/code&gt;是需要匹配的字符串，&lt;code&gt;maxsplit&lt;/code&gt;切割的次数，&lt;code&gt;repl&lt;/code&gt;需要替换为的字符串，&lt;code&gt;count&lt;/code&gt;替换次数&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;th&gt;返回值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;match(pattern， string[， flag])&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;从字符串头部开始查找，也可以指定起始位置，只匹配一次，找到匹配结果就返回&lt;/td&gt;
+&lt;td&gt;匹配到则返回一个&lt;code&gt;Match&lt;/code&gt;对象，无则返回&lt;code&gt;none&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;search(pattern， string[， flag])&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;查找字符串的任何位置，也是一次匹配，匹配到就返回&lt;/td&gt;
+&lt;td&gt;匹配到则返回一个&lt;code&gt;Match&lt;/code&gt;对象，无则返回&lt;code&gt;none&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;findall(pattern， string[， flag])&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;匹配任何位置，所有匹配的字符串，返回列表&lt;/td&gt;
+&lt;td&gt;返回列表，无则返回空列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;split(pattern， string[， maxsplit， flags])&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;该局匹配到的子字符串将整个string分割，去掉匹配到的字符串，返回列表&lt;/td&gt;
+&lt;td&gt;返回列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;sub(pattern， repl， string[， count， flags])&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;将匹配的字符串替换&lt;/td&gt;
+&lt;td&gt;返回替换后的字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;compile()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;将正则表达式的字符串形式编译为一个 &lt;code&gt;Pattern&lt;/code&gt;对象&lt;/td&gt;
+&lt;td&gt;不用重复写正则表达式，编译一次可以抑制使用，提高效率&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;贪婪和非贪婪&#34;&gt;贪婪和非贪婪&lt;/h4&gt;
+&lt;p&gt;默认贪婪，尽可能多的匹配。?表示非贪婪，尽可能少的匹配字符。&lt;/p&gt;
+&lt;h4 id=&#34;元字符&#34;&gt;元字符&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用元字符匹配单个字符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;字符&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;.&lt;/td&gt;
+&lt;td&gt;匹配任意1个字符（除了\n），需要匹配的话加入&lt;code&gt;re.S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.*&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[ ]&lt;/td&gt;
+&lt;td&gt;匹配[ ]中列举的字符&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[a-z]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\d&lt;/td&gt;
+&lt;td&gt;匹配数字，即0-9&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[\d]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\D&lt;/td&gt;
+&lt;td&gt;匹配非数字，即不是数字&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\s&lt;/td&gt;
+&lt;td&gt;匹配空白，即 空格，tab键，换行&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\S&lt;/td&gt;
+&lt;td&gt;匹配非空白（数字、英文字符、特殊符号）&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\w&lt;/td&gt;
+&lt;td&gt;匹配单词字符，即a-z、A-Z、0-9、_&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\W&lt;/td&gt;
+&lt;td&gt;匹配非单词字符&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;匹配前一个字符出现0次或者无数次，即可有可无&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.*?&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;字符&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;{m}&lt;/td&gt;
+&lt;td&gt;匹配前一个字符出现了m次&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[0-9]{11}&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;{m,n}&lt;/td&gt;
+&lt;td&gt;匹配前一个字符出现从m到n次&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[0-9]{5,11}@qq.com&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;字符&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;匹配字符串开头&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;quot;^http$&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$&lt;/td&gt;
+&lt;td&gt;匹配字符串结尾&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;quot;[\w]{5，11}@qq\.com$&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
